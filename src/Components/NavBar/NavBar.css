@@ -1,0 +1,89 @@
+.nav_container {
+    background-color: black;
+    justify-content: space-between;
+    display :flex;
+    width: 100%; 
+    height: 10vh; 
+    padding: 0 2vw;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1
+    
+  }
+  
+  .nav_logo{
+    font-family: 'Seaweed Script', cursive;
+    font-size: 2vw;
+    color: white;
+  }
+  
+  .nav_items{
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  
+  .nav_btn{
+    display: flex;
+    gap: 2vw;
+  }
+  
+.nav_items div,
+.nav_btn div {
+    color: white;
+    white-space: nowrap;
+}
+
+  @media screen and (max-width: 425px) {
+    .nav_items{
+      display: flex;
+      gap: 10px;
+      font-size:x-small;
+      justify-content: space-between
+    }
+    
+
+    .nav_logo,
+    .nav_items div,
+    .nav_btn div {
+    font-size:x-small
+}
+.nav_btn{
+  display: flex;
+  gap:10px;
+}
+
+  }
+
+
+
+  @media screen and (min-width: 1440px) {
+    .nav_items{
+      display: flex;
+      gap: 3vmax;
+      justify-content: space-between;
+    }
+    
+
+
+    .nav_logo{
+      font-weight: 100;
+    }
+    .nav_items,
+    .nav_btn  {
+      font-size: 1.5vw;
+}
+.nav_btn{
+  display: flex;
+  gap:10px;
+}
+   
+.nav_btn{
+  display: flex;
+  gap: 50px;
+}
+  }
+  
+  
